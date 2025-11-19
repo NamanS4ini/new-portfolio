@@ -25,7 +25,7 @@ export default function ProjectsSection() {
       title: "Youtube Playlist Analyzer",
       description: "Analyze any YouTube playlist to get insights on video stats, durations, and more.",
       tech: ["Next.js", "TypeScript", "Tailwind CSS"],
-      image: "/YTPLA.png",
+      image: "/ytpla.png",
       githubLink: "https://github.com/NamanS4ini/YTPlaylistLength",
       liveLink: "https://ytpla.in",
     },
