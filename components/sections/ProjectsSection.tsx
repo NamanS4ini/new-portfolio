@@ -120,15 +120,16 @@ export default function ProjectsSection() {
     {/* Image Modal */}
     {expandedImage && (
       <div 
-        className="fixed inset-0 z-[50000] bg-black/90 flex items-center justify-center p-4"
+        className="fixed inset-0 z-[50000] bg-black/95 flex items-center justify-center p-8"
         onClick={() => setExpandedImage(null)}
       >
-        <div className="relative w-full h-full max-w-6xl max-h-[90vh]">
+        <div className="relative w-full h-full mx-auto max-w-[75vw] max-h-[75vh]">
           <Image
             src={expandedImage}
             alt="Expanded project image"
             fill
             className="object-contain"
+            sizes="95vw"
           />
         </div>
       </div>
