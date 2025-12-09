@@ -1,15 +1,44 @@
 {
   "projects": [
-    {
-      "id": "ytpla",
-      "name": "YouTube Playlist Analyzer",
-      "description": "Analyze any YouTube playlist to get insights on video stats, durations, and more. A comprehensive tool for content creators and viewers.",
-      "tech": ["Next.js", "TypeScript", "Tailwind CSS"],
-      "image": "/ytpla.png",
-      "github": "https://github.com/NamanS4ini/YTPlaylistLength",
-      "live": "https://ytpla.in",
-      "featured": true
-    }
-    
-  ]
+  {
+    "id": "cuh-library",
+    "name": "CUH Library Website & Management System",
+    "description": "Official library website and admin management system built for the Central University of Haryana. Includes a secure librarian dashboard, role-based access, content management, and optimized MySQL backed search.",
+    "tech": ["React", "Node.js", "MySQL", "Tailwind CSS", "JWT", "Framer Motion"],
+    "image": "/projects/cuh-library.png",
+    "github": "",
+    "live": "https://library.cuh.ac.in/",
+    "featured": true
+  },
+  {
+    "id": "cuh-citation-tool",
+    "name": "CUH Academic Citation Generator",
+    "description": "An internal citation generation tool used university wide. Features parsing logic, responsive UI, and simplified input flows for quick formatted citations.",
+    "tech": ["React", "Express", "Node.js"],
+    "image": "/projects/cuh-citation-tool.png",
+    "github": "",
+    "live": "",
+    "featured": false
+  },
+  {
+    "id": "ytpla",
+    "name": "YouTube Playlist Analyzer",
+    "description": "Analyze any YouTube playlist to get insights on video stats, durations, and more. A comprehensive tool for content creators and viewers.",
+    "tech": ["Next.js", "TypeScript", "Tailwind CSS"],
+    "image": "/projects/ytpla.png",
+    "github": "https://github.com/NamanS4ini/YTPlaylistLength",
+    "live": "https://ytpla.in",
+    "featured": true
+  },
+  {
+    "id": "linkify",
+    "name": "Linkify – URL Shortener",
+    "description": "Full stack URL shortener that generates secure, shareable links with fast redirect performance and efficient storage.",
+    "tech": ["Next.js", "MongoDB", "Tailwind CSS"],
+    "image": "/projects/linkify.png",
+    "github": "https://github.com/NamanS4ini/Linkify",
+    "live": "",
+    "featured": true
+  }
+]
 }

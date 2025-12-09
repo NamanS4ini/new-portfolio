@@ -21,14 +21,12 @@ export const createFileSystem = (): FileSystem => {
   
   projectsData.projects.forEach((project) => {
     console.log('Adding project:', project.id, project.name)
-    projectsChildren[project.id] = {
-      type: 'directory',
-      name: project.id,
-      children: {
-        'description.txt': {
-          type: 'file',
-          name: 'description.txt',
-          content: `${project.name.toUpperCase()}
+    
+    const projectFiles: { [key: string]: FileSystemNode } = {
+      'description.txt': {
+        type: 'file',
+        name: 'description.txt',
+        content: `${project.name.toUpperCase()}
 ${'='.repeat(project.name.length)}
 
 Tech Stack: ${project.tech.join(', ')}
@@ -37,34 +35,46 @@ Description:
 -----------
 ${project.description}
 
-GitHub: ${project.github}
-Live Demo: ${project.live}
+${project.github ? `GitHub: ${project.github}` : ''}
+${project.live ? `Live Demo: ${project.live}` : ''}
 
 Commands:
 ---------
-./run.sh    - Open live demo
-./github.sh - Open GitHub repository
+${project.live ? './run.sh    - Open live demo\n' : ''}${project.github ? './github.sh - Open GitHub repository' : ''}
 `
-        },
-        'run.sh': {
-          type: 'file',
-          name: 'run.sh',
-          executable: true,
-          content: 'Run this script with: "./run.sh"\n',
-          action: () => {
-            window.open(project.live, '_blank')
-          }
-        },
-        'github.sh': {
-          type: 'file',
-          name: 'github.sh',
-          executable: true,
-          content: 'Run this script with: "./github.sh"\n',
-          action: () => {
-            window.open(project.github, '_blank')
-          }
+      }
+    }
+
+    // Only add run.sh if live URL exists
+    if (project.live) {
+      projectFiles['run.sh'] = {
+        type: 'file',
+        name: 'run.sh',
+        executable: true,
+        content: 'Run this script with: "./run.sh"\n',
+        action: () => {
+          window.open(project.live, '_blank')
         }
       }
+    }
+
+    // Only add github.sh if GitHub URL exists
+    if (project.github) {
+      projectFiles['github.sh'] = {
+        type: 'file',
+        name: 'github.sh',
+        executable: true,
+        content: 'Run this script with: "./github.sh"\n',
+        action: () => {
+          window.open(project.github, '_blank')
+        }
+      }
+    }
+
+    projectsChildren[project.id] = {
+      type: 'directory',
+      name: project.id,
+      children: projectFiles
     }
   })
   

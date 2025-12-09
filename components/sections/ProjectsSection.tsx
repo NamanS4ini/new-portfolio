@@ -5,7 +5,7 @@ import Image from "next/image"
 import { useState } from "react"
 import { Card } from "@/components/ui/card"
 import { SlideIn } from "@/components/animations"
-import { SiReact, SiNextdotjs, SiTypescript, SiTailwindcss, SiNodedotjs, SiMongodb, SiPostgresql, SiPython, SiFlask, SiFirebase, SiRedux, SiStripe, SiSocketdotio } from 'react-icons/si'
+import { SiReact, SiNextdotjs, SiTypescript, SiTailwindcss, SiNodedotjs, SiMongodb, SiPostgresql, SiPython, SiFlask, SiFirebase, SiRedux, SiStripe, SiSocketdotio, SiMysql, SiJsonwebtokens, SiExpress, SiFramer } from 'react-icons/si'
 import { TbBrandOpenai } from 'react-icons/tb'
 import { MdOutlineStyle } from 'react-icons/md'
 import projectsData from '@/data/projects.json'
@@ -30,6 +30,10 @@ export default function ProjectsSection() {
     "OpenAI API": <TbBrandOpenai className="w-5 h-5" />,
     "GSAP": <MdOutlineStyle className="w-5 h-5" />,
     "Material-UI": <MdOutlineStyle className="w-5 h-5" />,
+    "MySQL": <SiMysql className="w-5 h-5" />,
+    "Express": <SiExpress className="w-5 h-5" />,
+    "JWT": <SiJsonwebtokens className="w-5 h-5" />,
+    "Framer Motion": <SiFramer className="w-5 h-5" />,
   }
 
   return (
@@ -57,7 +61,7 @@ export default function ProjectsSection() {
                     />
                   </div>
                 <div className="p-6 flex flex-col grow items-center">
-                  <h3 className="text-2xl font-semibold mb-3 text-zinc-900 dark:text-zinc-50 text-center">
+                  <h3 className="text-2xl font-semibold mb-3 text-zinc-900 dark:text-zinc-50 text-center min-h-16 flex items-center">
                     {project.name}
                   </h3>
                   <p className="text-zinc-600 dark:text-zinc-400 mb-6 grow text-center">
@@ -74,25 +78,29 @@ export default function ProjectsSection() {
                       </div>
                     ))}
                   </div>
-                  <div className="flex gap-3">
-                    <a 
-                      href={project.github} 
-                      target="_blank" 
-                      rel="noopener noreferrer" 
-                      className="cursor-target flex items-center gap-2 px-4 py-2 border border-zinc-300 dark:border-zinc-700 rounded-full hover:bg-zinc-100 dark:hover:bg-zinc-800 transition-colors text-sm font-medium text-zinc-700 dark:text-zinc-300"
-                    >
-                      <Github className="w-4 h-4" />
-                      Code
-                    </a>
-                    <a 
-                      href={project.live} 
-                      target="_blank" 
-                      rel="noopener noreferrer" 
-                      className="cursor-target flex items-center gap-2 px-4 py-2 bg-zinc-900 dark:bg-zinc-100 text-white dark:text-zinc-900 rounded-full hover:bg-zinc-800 dark:hover:bg-zinc-200 transition-colors text-sm font-medium"
-                    >
-                      <ExternalLink className="w-4 h-4" />
-                      Live
-                    </a>
+                  <div className="flex gap-3 min-h-10">
+                    {project.github && (
+                      <a 
+                        href={project.github} 
+                        target="_blank" 
+                        rel="noopener noreferrer" 
+                        className="cursor-target flex items-center gap-2 px-4 py-2 border border-zinc-300 dark:border-zinc-700 rounded-full hover:bg-zinc-100 dark:hover:bg-zinc-800 transition-colors text-sm font-medium text-zinc-700 dark:text-zinc-300"
+                      >
+                        <Github className="w-4 h-4" />
+                        Code
+                      </a>
+                    )}
+                    {project.live && (
+                      <a 
+                        href={project.live} 
+                        target="_blank" 
+                        rel="noopener noreferrer" 
+                        className="cursor-target flex items-center gap-2 px-4 py-2 bg-zinc-900 dark:bg-zinc-100 text-white dark:text-zinc-900 rounded-full hover:bg-zinc-800 dark:hover:bg-zinc-200 transition-colors text-sm font-medium"
+                      >
+                        <ExternalLink className="w-4 h-4" />
+                        Live
+                      </a>
+                    )}
                   </div>
                 </div>
               </Card>

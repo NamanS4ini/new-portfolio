@@ -3,7 +3,6 @@
 import LogoLoop from '@/components/LogoLoop'
 import { SiReact, SiNextdotjs, SiTypescript, SiTailwindcss, SiHtml5, SiCss3, SiJavascript, SiMongodb, SiNodedotjs, SiCplusplus, SiPython, SiGithub, SiLinkedin, SiX, SiLeetcode } from 'react-icons/si'
 import { SlideIn } from "@/components/animations"
-import { Button } from "@/components/ui/button"
 
 export default function AboutSection() {
     const techLogos = [
@@ -30,15 +29,19 @@ export default function AboutSection() {
                 </SlideIn>
                 <SlideIn direction="up" delay={0.2}>
                     <p className="text-lg text-zinc-600 dark:text-zinc-300 mb-6">
-
-                        Hi, I'm Naman Saini, a Computer Science student at the Central University of Haryana in Mahendergarh. Currently, I am pursuing my bachelor's degree. I completed my high school education at Happy Evergreen Sr. Sec. School, achieving a score of 96%.
+                        I'm Naman Saini, a Full Stack Developer who builds fast, reliable, and user focused web apps that solve real world problems. I enjoy taking an idea from zero to deployment and turning it into something people actually use.
                         <br />
                         <br />
-                        My journey into coding began in the 11th grade, driven by my desire to showcase my creativity through the things I build. I believe creativity can be harnessed to create beautiful and impactful solutions, and coding is my chosen medium to express this creativity.
+                        I’ve contributed to multiple software projects at the Central University of Haryana, including building and deploying the university’s official Library website and management system used daily by students and faculty. I also developed core parts of the internal academic citation tool that the university now relies on.
                         <br />
                         <br />
-                        I am continuously learning and evolving in my field. For me, learning is a lifelong journey, and I firmly believe it should be for everyone. I am passionate about expanding my knowledge and skills, and I am always eager to take on new challenges.
-
+                        I love working across the stack. From designing clean interfaces to engineering scalable backend systems, I aim for products that feel smooth, load fast, and make a genuine difference. My project ytpla.in is a good example of this approach. It started as a small idea and turned into a full tool that helps users understand YouTube playlists with clear metrics and advanced sorting.
+                        <br />
+                        <br />
+                        I’ve also built full stack applications like Linkify, and I’m continuously expanding my knowledge through hands-on projects, university contributions, and consistent DSA practice. With 300+ LeetCode problems solved and a strong command of algorithms and data structures, I bring both practical engineering skills and solid CS fundamentals.
+                        <br />
+                        <br />
+                        I’m always pushing myself to learn more, build better, and take on challenges that sharpen my problem solving mindset.
                     </p>
                 </SlideIn>
                 <SlideIn direction="up" delay={0.3}>
@@ -68,37 +71,37 @@ export default function AboutSection() {
                             Connect with Me
                         </h3>
                         <div className="flex gap-6 flex-wrap items-center">
-                            <a 
-                                href="https://github.com/namans4ini" 
-                                target="_blank" 
-                                rel="noopener noreferrer" 
+                            <a
+                                href="https://github.com/namans4ini"
+                                target="_blank"
+                                rel="noopener noreferrer"
                                 className="cursor-target p-2 flex items-center gap-2 text-zinc-600 dark:text-zinc-300 hover:text-zinc-900 dark:hover:text-zinc-50 transition-colors group"
                             >
                                 <SiGithub className="w-6 h-6 group-hover:scale-110 transition-transform" />
                                 <span className="font-medium">GitHub</span>
                             </a>
-                            <a 
-                                href="https://linkedin.com/in/namans4ini" 
-                                target="_blank" 
-                                rel="noopener noreferrer" 
+                            <a
+                                href="https://linkedin.com/in/namans4ini"
+                                target="_blank"
+                                rel="noopener noreferrer"
                                 className="cursor-target p-2 flex items-center gap-2 text-zinc-600 dark:text-zinc-300 hover:text-zinc-900 dark:hover:text-zinc-50 transition-colors group"
                             >
                                 <SiLinkedin className="w-6 h-6 group-hover:scale-110 transition-transform" />
                                 <span className="font-medium">LinkedIn</span>
                             </a>
-                            <a 
-                                href="https://twitter.com/namans4ini" 
-                                target="_blank" 
-                                rel="noopener noreferrer" 
+                            <a
+                                href="https://twitter.com/namans4ini"
+                                target="_blank"
+                                rel="noopener noreferrer"
                                 className="cursor-target p-2 flex items-center gap-2 text-zinc-600 dark:text-zinc-300 hover:text-zinc-900 dark:hover:text-zinc-50 transition-colors group"
                             >
                                 <SiX className="w-6 h-6 group-hover:scale-110 transition-transform" />
                                 <span className="font-medium">Twitter</span>
                             </a>
-                            <a 
-                                href="https://leetcode.com/namansaini" 
-                                target="_blank" 
-                                rel="noopener noreferrer" 
+                            <a
+                                href="https://leetcode.com/namansaini"
+                                target="_blank"
+                                rel="noopener noreferrer"
                                 className="cursor-target p-2 flex items-center gap-2 text-zinc-600 dark:text-zinc-300 hover:text-zinc-900 dark:hover:text-zinc-50 transition-colors group"
                             >
                                 <SiLeetcode className="w-6 h-6 group-hover:scale-110 transition-transform" />
