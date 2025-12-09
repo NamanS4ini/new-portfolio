@@ -1,0 +1,15 @@
+{
+  "projects": [
+    {
+      "id": "ytpla",
+      "name": "YouTube Playlist Analyzer",
+      "description": "Analyze any YouTube playlist to get insights on video stats, durations, and more. A comprehensive tool for content creators and viewers.",
+      "tech": ["Next.js", "TypeScript", "Tailwind CSS"],
+      "image": "/ytpla.png",
+      "github": "https://github.com/NamanS4ini/YTPlaylistLength",
+      "live": "https://ytpla.in",
+      "featured": true
+    }
+    
+  ]
+}
