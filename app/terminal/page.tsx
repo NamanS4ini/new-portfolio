@@ -4,7 +4,6 @@ import { useEffect, useRef, useState, useCallback } from 'react'
 import '@xterm/xterm/css/xterm.css'
 import Link from 'next/link'
 import { createFileSystem, FileSystem } from '@/lib/fileSystem'
-import TargetCursor from '@/components/TargetCursor'
 import projectsData from '@/data/projects.json'
 
 // Import Terminal and FitAddon types only
