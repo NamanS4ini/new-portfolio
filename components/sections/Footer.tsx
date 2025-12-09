@@ -17,9 +17,9 @@ export default function Footer() {
         <div className="flex flex-col md:flex-row justify-between items-center gap-6">
           {/* Copyright */}
           <div className="text-zinc-600 dark:text-zinc-400 text-sm">
-            <p className="flex items-center gap-2">
-              &copy; {new Date().getFullYear()} Naman Saini. Built with 
+            <p className="flex items-center gap-2">Built with 
               <Heart className="w-4 h-4 text-red-500 fill-red-500 inline" />
+              by Naman Saini.
             </p>
           </div>
 
