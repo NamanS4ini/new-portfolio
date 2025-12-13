@@ -15,6 +15,9 @@ const geistMono = Geist_Mono({
 export const metadata: Metadata = {
   title: "Naman Saini - Full Stack Developer",
   description: "Portfolio of Naman Saini, a passionate full-stack developer specializing in modern web technologies.",
+  verification: {
+    google: "LlcGh97wfD8VMKTmwdRoP9AddnOlThOhU2s6vTR1xZk",
+  },
 };
 
 export default function RootLayout({
