@@ -57,7 +57,7 @@ export default function ProjectsSection() {
                       src={project.image}
                       alt={project.name}
                       fill
-                      className="object-cover cursor-target grayscale group-hover:grayscale-0 transition-all duration-300"
+                      className="object-cover cursor-target md:grayscale md:group-hover:grayscale-0 transition-all duration-300"
                     />
                   </div>
                 <div className="p-6 flex flex-col grow items-center">

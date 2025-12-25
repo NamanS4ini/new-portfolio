@@ -64,6 +64,7 @@ export default function TerminalPage() {
         term.writeln('')
         term.writeln('  \x1b[1;33mName:\x1b[0m           Naman Saini')
         term.writeln('  \x1b[1;33mRole:\x1b[0m           Full Stack Developer')
+        term.writeln('  \x1b[1;33mBased:\x1b[0m          India')
         term.writeln('  \x1b[1;33mEducation:\x1b[0m      B.Tech, Central University of Haryana')
         term.writeln('')
         term.writeln('  \x1b[1;33mSkills:\x1b[0m')
