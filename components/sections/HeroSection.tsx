@@ -12,16 +12,14 @@ export default function HeroSection() {
     return (<>
         <FadeIn delay={0.4}>
 
-            <div className="absolute z-10 top-0 left-0 w-screen h-screen">
+            <div className="absolute -z-10 top-0 left-0 w-screen h-screen">
                 <Particles
                     particleColors={['#ffffff', '#ffffff']}
                     particleCount={200}
                     particleSpread={10}
                     speed={0.1}
                     particleBaseSize={100}
-                    moveParticlesOnHover={true}
-                    alphaParticles={false}
-                    disableRotation={false}
+                    moveParticlesOnHover={false}
                 />
             </div>
         </FadeIn>
@@ -29,7 +27,7 @@ export default function HeroSection() {
             <div className="max-w-7xl mx-auto w-full">
                 <FadeIn delay={0.4}>
                     <div className="flex flex-col lg:flex-row justify-between">
-                        <div className="w-full my-auto" style={{ position: 'relative' }}>
+                        <div className="w-full z-10 my-auto" style={{ position: 'relative' }}>
                             <p className="text-zinc-600 dark:text-zinc-400 mb-4 text-lg">
                                 Hi, I'm
                             </p>
@@ -46,10 +44,10 @@ export default function HeroSection() {
                                 minFontSize={36}
                             />
                         </div>
-                        <div className="flex mx-auto z-10 md:w-1/2 justify-end p-20 items-end">
+                        <div className="flex mx-auto md:w-1/2 justify-end p-20 items-end">
                             <Link target="_blank" className="z-100 cursor-target" href="https://github.com/namans4ini">
                                 <Image
-                                    src="/profile.png"
+                                    src="/profile.jpg"
                                     alt="Naman Saini"
                                     width={300}
                                     height={300}
@@ -60,11 +58,11 @@ export default function HeroSection() {
                         </div>
                     </div>
                 </FadeIn>
-                <div className="text-3xl md:text-5xl font-semibold mb-8 text-zinc-800 dark:text-zinc-200 h-16">
+                <div className="text-3xl z-100 md:text-5xl font-semibold mb-8 text-zinc-800 dark:text-zinc-200 h-16">
                     <Typewriter text="Full Stack Developer" delay={0.8} />
                 </div>
                 <FadeIn delay={1.5}>
-                    <p className="text-xl text-zinc-600 dark:text-zinc-400 mb-12 max-w-2xl">
+                    <p className="text-xl z-100 text-zinc-600 dark:text-zinc-400 mb-12 max-w-2xl">
                         Crafting beautiful, performant, and user-friendly web experiences
                         with modern technologies.
                     </p>

@@ -35,7 +35,7 @@ export default function GuiPage() {
         />
       )}
       <Navbar onToggleCursor={toggleCursor} themedCursor={themedCursor} />
-      <div className="min-h-dvh bg-white dark:bg-zinc-950 transition-colors">
+      <div className="min-h-dvh bg-transparent transition-colors">
         <HeroSection />
         <AboutSection />
         <ProjectsSection />
