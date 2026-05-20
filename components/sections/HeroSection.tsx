@@ -48,7 +48,7 @@ export default function HeroSection() {
                             <Link target="_blank" className="z-100 cursor-target" href="https://github.com/namans4ini">
                                 <Image
                                     src="/profile.png"
-                                    alt="Naman Saini"
+                                    alt="Profie"
                                     width={300}
                                     height={300}
                                     className="rounded-full mx-auto"
