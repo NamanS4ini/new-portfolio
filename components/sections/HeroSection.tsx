@@ -47,7 +47,7 @@ export default function HeroSection() {
                         <div className="flex mx-auto md:w-1/2 justify-end p-20 items-end">
                             <Link target="_blank" className="z-100 cursor-target" href="https://github.com/namans4ini">
                                 <Image
-                                    src="/profile.jpg"
+                                    src="/profile.png"
                                     alt="Profie"
                                     width={300}
                                     height={300}
